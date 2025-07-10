@@ -33,18 +33,19 @@ A full-stack real-time chat application built using **Django Channels**, **WebSo
 
 ## 📁 Project Structure
 
-chatproject/
-├── chat/ # Chat app
-│ ├── consumers.py # WebSocket logic
-│ ├── routing.py # App-level WebSocket routing
-│ ├── models.py # Room model
-│ └── views.py # (Optional) HTTP views
-├── chatproject/ # Django project config
-│ ├── asgi.py # ASGI config (Daphne entry point)
-│ ├── routing.py # Project WebSocket routing
-│ └── settings.py # Main Django settings
-├── frontend/ # React frontend (Vite)
-└── requirements.txt # Python dependencies
+📁 Project Structure
+
+.
+├── Chat_backend/               # Django backend
+│   ├── chat/                   # Django app (WebSocket logic)
+│   ├── Chat_backend/           # Django project config
+│   ├── db.sqlite3              # Local DB (development)
+│   └── manage.py               # Django entry point
+├── quickroom-react-chat/       # React + Vite frontend
+│   ├── src/                    # React source files
+│   ├── public/                 # Static files
+│   ├── tailwind.config.ts      # Tailwind config
+│   └── vite.config.ts          # Vite config
 
 yaml
 Copy
